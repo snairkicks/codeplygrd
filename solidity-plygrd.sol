@@ -6,12 +6,14 @@ contract Scopes{
     Keywords
     private = you can call the function inside the contract.
 
-    public = you can call the function from outside the smart contract as well inside the smart contract.
+    public = you can call the function from outside the smart contract as well
+    inside the smart contract.
 
     internal = called ONLY within the contract OR other contracts that inherit
     the smart contract internal is slightly less restrictive than public.
 
-    external = you can ONLY call the function outside the contract not from other functions within
+    external = you can ONLY call the function outside the contract not from
+    other functions within.
 
     // c++ also has inheritance
 
@@ -22,10 +24,11 @@ contract Scopes{
 
     */
 
-    uint public data = 10; // state variable
+    uint public data = 10; // this is a state variable
 
     function x() external pure returns (uint) {
-        uint data = 25; // local variable overides state. it remains in the function.
+        uint data = 25; // local variable overides state. it remains in the
+                        // function.
         return data;
     }
 
@@ -47,6 +50,7 @@ contract IfStatements{
             return true;
             } else {
             return false;}}
+
     uint stakingWallet = 8;
     function airDrop() public view returns(uint){
         if(stakingWallet >= 7){
