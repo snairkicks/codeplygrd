@@ -26,7 +26,7 @@ pragma solidity ^ 0.8.0;
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 
-contract Scopes{
+contract scopes {
     /* Variable Scope - Functions & Variables
     Keywords
     private = you can call the function inside the contract.
@@ -68,7 +68,7 @@ contract Scopes{
     }
 
 }
-contract IfStatements{
+contract ifStatements {
     uint orange = 8;
     function validateOranges() public view returns(bool){
         if(orange == 5){
@@ -85,7 +85,37 @@ contract IfStatements{
         }
     }
 }
-contract loops{
+contract loops {
+  uint [] public numbersList = [1,2,3,4,5,6,7,8,9,10];
+  //   ^array ^visibility ^list name ^list
+  function checkMultiples(uint _number)public view returns (uint) {
+    uint count = 0;
+    //3part statement for the for loop.
+    //1. initalize start of loop.
+    //2. determing length of loop and check [i] against the list. .length is a method that tells the loop to run to completion.
+    //3. direct the index after each turn.
+    for(uint i; i < numbersList.length; i++)
+    //i = index = each iteration through your list. Iteration means looping through.
+      if (checkMultiples(numberList[i],_number)) {
+        count++;
+      }
+  }
+  //this is a modulo function
+  function checker(uint _num, uint _nums) public view returns(bool) {
+        if(_num % _nums == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+}
+contract maps {
+
+}
+contract structs {
+
+}
+contract arrays {
 
 }
 ;
