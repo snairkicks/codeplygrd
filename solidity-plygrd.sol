@@ -35,7 +35,7 @@ contract scopes {
     inside the smart contract.
 
     internal = called ONLY within the contract OR other contracts that inherit
-    the smart contract internal is slightly less restrictive than public.
+    the smart contract. internal is slightly less restrictive than public.
 
     external = you can ONLY call the function outside the contract not from
     other functions within.
