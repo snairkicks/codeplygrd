@@ -92,7 +92,8 @@ contract loops {
     uint count = 0;
     //3part statement for the for loop.
     //1. initalize start of loop.
-    //2. determing length of loop and check [i] against the list. .length is a method that tells the loop to run to completion.
+    //2. determing length of loop and check [i] against the list. .length is a
+    //   method that tells the loop to run to completion.
     //3. direct the index after each turn.
     for(uint i; i < numbersList.length; i++)
     //i = index = each iteration through your list. Iteration means looping through.
