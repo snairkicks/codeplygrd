@@ -94,7 +94,8 @@ contract loops {
     //1. initalize start of loop.
     //2. determing length of loop and check [i] against the list. .length is a
     //   method that tells the loop to run to completion.
-    //3. direct the index after each turn.
+    //3. direct the index after each turn. 'i++' will move the index up one from
+    //   it last started.
     for(uint i=1; i < numbersList.length; i++)
     //i = index = each iteration through your list. Iteration means looping through.
       if (checkMultiples(numberList[i],_number)) {
